@@ -34,6 +34,8 @@ npm i apollo-client
 _logiciels/technologies :_
 * [GraphQL](https://graphql.org/) - Langage query pour API
 * [React TypeScript](https://www.typescriptlang.org/docs/handbook/react.html)
+* [TypeScript](https://www.typescriptlang.org) - Similair to javascript
+* [Google MAP API](https://developers.google.com/maps?hl=fr)
 
 
 ## Versions
