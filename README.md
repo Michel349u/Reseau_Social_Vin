@@ -4,7 +4,7 @@ Notre projet consiste à créer un réseau social, qui permettrait à des consom
 
 ### Installation
 
-git clone 
+git clone git@github.com:Michel349u/Reseau_Social_Vin.git
 
 ## Démarrage
 
