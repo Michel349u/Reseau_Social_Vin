@@ -1,0 +1,145 @@
+type Query {
+  users(query: String): [User!]!
+  posts(query: String): [Post!]!
+  notes(query: String): [Note!]!
+  comments: [Comment!]!
+  vins: [Vin!]!
+  badges: [Badge!]!
+  me: User!
+  post: Post!
+  note: Note!
+
+}
+
+type Mutation {
+  createUser(data: CreateUserInput!): User!
+  deleteUser(id: ID!): User!
+  createPost(data: CreatePostInput!): Post!
+  deletePost(id: ID!): Post!
+  updatePost(id: ID!, data: UpdatePostInput!): Post!
+  createComment(data: CreateCommentInput!): Comment!
+  deleteComment(id: ID!): Comment!
+  updateComment(id: ID!, data: UpdateCommentInput!): Comment!
+  createBadge(data: CreateBadgeInput!): Badge!
+  createVin(data: CreateVinInput!): Vin!
+}
+
+type Subscription {
+  comment(postId: ID!): CommentSubscriptionPayload!
+  post: PostSubscriptionPayload!
+}
+
+input CreateBadgeInput {
+  id: ID!
+  intitule: String!
+}
+
+input CreateVinInput {
+  id: ID!
+    nom: String!
+    typev: String!
+    typer: String!
+    idVignoble: ID
+    image: String!
+}
+
+input CreateUserInput {
+  nom: String!
+  prenom: String!
+  email: String!
+  mdp: String
+  type: String
+  lat: Float
+  long: Float
+  age: Int
+}
+
+input CreatePostInput {
+  title: String!
+  body: String!
+  published: Boolean!
+  author: ID!
+}
+
+input UpdatePostInput {
+  title: String
+  body: String
+  published: Boolean
+}
+
+input CreateCommentInput {
+  text: String!
+  author: ID!
+  post: ID!
+}
+
+input UpdateCommentInput {
+  text: String
+}
+
+type User {
+  id: ID!
+  nom: String!
+  prenom: String!
+  email: String!
+  mdp: String
+  type: String
+  lat: Float
+  long: Float
+  logo: String
+  age: Int
+  posts: [Post!]!
+  comments: [Comment!]!
+}
+
+type Post {
+  id: ID!
+  title: String!
+  body: String!
+  published: Boolean!
+  author: User!
+  comments: [Comment!]!
+}
+
+type Comment {
+  id: ID!
+  text: String!
+  author: User!
+  post: Post!
+}
+
+type Badge{
+    id: ID!
+    intitule: String!
+  }
+
+type Vin{
+    id: ID!
+    nom: String!
+    typev: String!
+    typer: String!
+    idVignoble: ID
+    image: String!
+  }
+
+type Note{
+  id: ID!
+  notation: Int!
+  vin: ID!
+}
+
+enum MutationType {
+  CREATED
+  UPDATED
+  DELETED
+}
+
+type PostSubscriptionPayload {
+  mutation: MutationType!
+  data: Post!
+}
+
+type CommentSubscriptionPayload {
+  mutation: MutationType!
+  data: Comment!
+}
