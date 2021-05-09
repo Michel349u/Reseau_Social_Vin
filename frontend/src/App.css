@@ -1,0 +1,153 @@
+.erreur{
+    color:red;
+}
+.vignobles{
+    width:10%;
+
+}
+.connexion{
+    float:left;
+    position: absolute;
+}
+.tabPoste{
+    font-size: x-small;
+}
+.search-box{
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-btn{
+    color:#e84118;
+    float:right;
+    width:40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width:240px;
+}
+.container{
+    display:none;
+    position: absolute;
+    background: rgba(110,110,127,0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-top: -11%;
+}
+.block{
+    width: 50%;
+    height:25%;
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2%;
+    border: 2px solid black;
+
+}
+.form{
+
+    color:black;
+    font-size : 15px;
+    margin: 0;
+
+    padding : 0px 0px 0px 0px;
+    text-align: center;
+}
+.form input[type="text"]{
+    width:19%;
+}
+.form label{
+    margin-right: 5%;
+}
+.form input, .form select, .form button{
+    margin-top:2%;
+}
+.btnInfo{
+    background: none;
+    outline: none;
+    text-decoration: underline;
+    box-shadow: none;
+    border:none;
+    cursor: pointer;
+    color: white;
+}
+.tabMap{
+    border: 4px dashed royalblue;
+}
+.App{
+    text-align: center;
+}
+.search-txt::placeholder{
+    color:lightgrey;
+}
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+.tableau{
+    margin: 0 auto;
+    margin-top:2%;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+.lien{
+    text-decoration: underline;
+    color:white;
+}
+.lien:hover{
+    font-weight: bold;
+}
+.tableau thead tr th{
+    border: 2px solid white;
+}
+.tableau tbody tr td{
+    padding: 20px;
+    border: 2px solid white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+

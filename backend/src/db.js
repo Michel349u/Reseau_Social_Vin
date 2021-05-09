@@ -62,25 +62,40 @@ const users = [
 const posts = [
   {
     id: '10',
-    title: 'GraphQL 101',
-    body: 'This is how to use GraphQL...',
+    title: 'Vin incroyable',
+    body: 'super vin dommage le coup amer a la fin',
     published: true,
     author: '1'
   },
   {
     id: '11',
-    title: 'GraphQL 201',
-    body: 'This is an advanced GraphQL post...',
-    published: false,
+    title: 'Super vin',
+    body: '',
+    published: true,
     author: '1'
   },
   {
     id: '12',
-    title: 'Programming Music',
+    title: 'Vin légendaire',
+    body: 'Super vin rien a dire',
+    published: true,
+    author: '2'
+  },
+  {
+    id: '13',
+    title: 'Vin trop sucrée',
+    body: 'Dommage pour ce gout beaucoup trop sucrée a mon coup mais super vignoble',
+    published: true,
+    author: '3'
+  },
+  {
+    id: '14',
+    title: 'Je suis dingue de ce vin',
     body: '',
     published: true,
     author: '2'
   }
+
 ]
 
 const TypeVin = {
@@ -126,43 +141,61 @@ const vins = [
 ]
 
 const badges = [
-  { id: 1, intitule: '1' },
-  { id: 2, intitule: '2' },
-  { id: 3, intitule: '3' },
-  { id: 4, intitule: '4' },
-  { id: 5, intitule: '5' },
-  { id: 6, intitule: '6' },
-  { id: 7, intitule: '7' },
-  { id: 8, intitule: '8' },
-  { id: 9, intitule: '9' },
-  { id: 10, intitule: '10' }
+  { id: 1, intitule: 'Vin de qualité supérieur' },
+  { id: 2, intitule: 'Vin noble' },
+  { id: 3, intitule: 'Vin d\'exception' },
+  { id: 4, intitule: 'Vigne noble' },
+  { id: 5, intitule: 'Vin de restaurant ' },
+  { id: 6, intitule: 'Vin collection' },
+  { id: 7, intitule: 'Vin Francais' },
+  { id: 8, intitule: 'Vin italien' },
+  { id: 9, intitule: 'Vin grand chateau' },
+  { id: 10, intitule: 'Vin premium ' }
 ]
 
 
 const comments = [
   {
     id: '102',
-    text: 'This worked well for me. Thanks!',
+    text: 'Thanks for the comment',
     author: '3',
     post: '10'
   },
   {
     id: '103',
-    text: 'Glad you enjoyed it.',
+    text: 'Thanks for the comment',
     author: '1',
     post: '10'
   },
   {
     id: '104',
-    text: 'This did no work.',
+    text: 'Thanks for the comment',
     author: '2',
     post: '11'
   },
   {
     id: '105',
-    text: 'Nevermind. I got it to work.',
+    text: 'Merci du commentaire je prend note.',
     author: '1',
     post: '12'
+  },
+  {
+    id: '106',
+    text: 'Merci du commentaire je prend note.',
+    author: '1',
+    post: '14'
+  },
+  {
+    id: '107',
+    text: 'Merci du commentaire je prend note',
+    author: '5',
+    post: '14'
+  },
+  {
+    id: '108',
+    text: 'Merci du commentaire je prend note',
+    author: '2',
+    post: '13'
   }
 ]
 

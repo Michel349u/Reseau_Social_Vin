@@ -44,6 +44,7 @@ input CreateVinInput {
 }
 
 input CreateUserInput {
+  id: ID!
   nom: String!
   prenom: String!
   email: String!
@@ -55,6 +56,7 @@ input CreateUserInput {
 }
 
 input CreatePostInput {
+  id: ID!
   title: String!
   body: String!
   published: Boolean!
@@ -68,6 +70,7 @@ input UpdatePostInput {
 }
 
 input CreateCommentInput {
+  id: ID!
   text: String!
   author: ID!
   post: ID!

@@ -28,7 +28,6 @@ const Mutation = {
     }
 
     const user = {
-      id: uuidv4(),
       ...args.data
     }
 
@@ -66,7 +65,6 @@ const Mutation = {
     }
 
     const post = {
-      id: uuidv4(),
       ...args.data
     }
 
@@ -109,9 +107,16 @@ const Mutation = {
     const { id, data } = args
     const post = db.posts.find(post => post.id === id)
     const originalPost = { ...post }
+    const postExists = db.posts.some(
+      post => post.id === args.data.post && post.published
+    )
 
     if (!post) {
       throw new Error('Post not found')
+    }
+    
+    if (postExists) {
+      throw new Error('posts deja existante')
     }
 
     if (typeof data.title === 'string') {
@@ -156,13 +161,17 @@ const Mutation = {
     const postExists = db.posts.some(
       post => post.id === args.data.post && post.published
     )
+    const comExists = db.comments.some( comment => comment.id === args.data.id)
 
     if (!userExists || !postExists) {
       throw new Error('Unable to find user and post')
     }
 
+    if (comExists) {
+      throw new Error('commentaire deja existante')
+    }
+
     const comment = {
-      id: uuidv4(),
       ...args.data
     }
 
