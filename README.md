@@ -2,7 +2,8 @@
 
 Notre projet consiste à créer un réseau social, qui permettrait à des consommateurs de vin de discuter noter et parler autour de leurs vins préférer. Sans oublier que les producteurs de vins eux pourront en profiter pour mettre en avant leurs produits, leur production et des informations concernant leur création
 ![image](https://user-images.githubusercontent.com/55313428/117568122-2622f780-b0bf-11eb-844d-ada7d517f354.png)
-![image](https://user-images.githubusercontent.com/55313428/117568144-363ad700-b0bf-11eb-9db9-bae80858ccc4.png)
+![image](https://user-images.githubusercontent.com/55313428/117568233-82861700-b0bf-11eb-80fd-d71dcf35c2fd.png)
+
 ![image](https://user-images.githubusercontent.com/55313428/117568199-5b2f4a00-b0bf-11eb-9a27-7c8dfb5e8ccd.png)
 ![image](https://user-images.githubusercontent.com/55313428/117568211-61bdc180-b0bf-11eb-8fa3-3c6316feb2d4.png)
 
