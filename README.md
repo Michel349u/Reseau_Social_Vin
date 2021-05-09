@@ -1,6 +1,7 @@
 # Réseau social accès sur le vin
 
 Notre projet consiste à créer un réseau social, qui permettrait à des consommateurs de vin de discuter noter et parler autour de leurs vins préférer. Sans oublier que les producteurs de vins eux pourront en profiter pour mettre en avant leurs produits, leur production et des informations concernant leur création
+![image](https://user-images.githubusercontent.com/55313428/117568122-2622f780-b0bf-11eb-844d-ada7d517f354.png)
 
 ### Installation
 
