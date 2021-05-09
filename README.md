@@ -2,24 +2,21 @@
 
 Notre projet consiste à créer un réseau social, qui permettrait à des consommateurs de vin de discuter noter et parler autour de leurs vins préférer. Sans oublier que les producteurs de vins eux pourront en profiter pour mettre en avant leurs produits, leur production et des informations concernant leur création
 
-## Pour commencer
-
-...
-
-### Pré-requis
-
-...
-
 ### Installation
 
-...
+git clone 
 
 ## Démarrage
 
-...
+cd/backend
+yarn
+yarn start
 
-## Fabriqué avec
-
+cd/frontend
+npm install
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+npm i graphql-react
+npm i apollo-client
 
 _logiciels/technologies :_
 * [GraphQL](https://graphql.org/) - Langage query pour API
