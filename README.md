@@ -14,14 +14,22 @@ git clone git@github.com:Michel349u/Reseau_Social_Vin.git
 ## Démarrage
 
 cd/backend
+
 yarn
+
 yarn start
 
+
 cd/frontend
+
 npm install
+
 npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
 npm i graphql-react
+
 npm i apollo-client
+
 
 _logiciels/technologies :_
 * [GraphQL](https://graphql.org/) - Langage query pour API
